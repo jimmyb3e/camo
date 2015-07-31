@@ -1,0 +1,507 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"inl",
+				"inline"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"list",
+				"list-style-position"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"font",
+				"font-size"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 347.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Controlinsta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"toggl",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"toggle",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"sublim",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"subli",
+				"SublimeLinter: Choose Lint Mode"
+			],
+			[
+				"lint",
+				"SublimeLinter: Next Error"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"pcl",
+				"Package Control: List Packages"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"linte",
+				"SublimeLinter: Choose Gutter Theme"
+			],
+			[
+				"",
+				"Package Control: Remove Package"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			]
+		],
+		"width": 486.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/James/Desktop/camo/js/bootstrap.js",
+		"/Users/James/Dropbox/Code/scratch-sheet.js",
+		"/Users/James/Desktop/camo/js/custom.js",
+		"/Users/James/Desktop/camo/css/bootstrap.css",
+		"/Users/James/Desktop/camo/css/custom.css",
+		"/Users/James/Desktop/camo/index.html",
+		"/Users/James/Dropbox/Code/brs/script.js",
+		"/Users/James/Dropbox/Code/brs/js/app.js",
+		"/Users/James/Desktop/working_with_scss/screen.css",
+		"/Users/James/Desktop/working_with_scss/navigation.html",
+		"/Users/James/Desktop/working_with_scss/screen.sass",
+		"/Users/James/Desktop/working_with_scss/screen.scss",
+		"/Users/James/Desktop/working_with_scss/target.css",
+		"/Users/James/Dropbox/Harvard Summer School - 2015/Fundamentals of Website Development/page_layout/css/bootstrap.css",
+		"/Users/James/Dropbox/Harvard Summer School - 2015/Fundamentals of Website Development/page_layout/js/bootstrap.js",
+		"/Users/James/Dropbox/Harvard Summer School - 2015/Fundamentals of Website Development/page_layout/js/custom.js",
+		"/Users/James/Dropbox/Harvard Summer School - 2015/Fundamentals of Website Development/page_layout/css/style.css",
+		"/Users/James/Dropbox/Harvard Summer School - 2015/Fundamentals of Website Development/page_layout/distance_education.html",
+		"/Users/James/Desktop/camo/css/skeleton.css",
+		"/Users/James/Desktop/camo/css/normalize.css",
+		"/Users/James/Desktop/brs/js/app.js",
+		"/Users/James/Desktop/brs/indexAng.html",
+		"/Users/James/Desktop/brs/script.js",
+		"/Users/James/Desktop/brs/maps.js",
+		"/Users/James/Desktop/brs/index.html",
+		"/Users/James/Desktop/firebase-angular/index.html",
+		"/Users/James/Desktop/firebase-angular/js/app.js",
+		"/Users/James/Desktop/brs/stylish.css",
+		"/Users/James/Desktop/brs/rest-data.json",
+		"/Users/James/Dropbox/Harvard Summer School - 2015/Fundamentals of Website Development/lunch_special/form.html",
+		"/Users/James/Desktop/brs/sorttable.js",
+		"/Users/James/Dropbox/Harvard Summer School - 2015/Fundamentals of Website Development/xformdeprecated/news.html",
+		"/Users/James/Dropbox/Code/Website deployment/First website/index.html",
+		"/Users/James/Desktop/brs/restData.json",
+		"/Users/James/Desktop/brs/restaurant-data (old).js",
+		"/Users/James/Dropbox/Code/git/wildseal-dev/google.html",
+		"/Users/James/Dropbox/Code/Boston restaurant site/restData.json",
+		"/Users/James/Dropbox/Code/Boston restaurant site/script.js",
+		"/Users/James/Dropbox/Code/Boston restaurant site/stylish.css",
+		"/Users/James/Dropbox/Harvard Summer School - 2015/Fundamentals of Website Development/xformdeprecated/news.css",
+		"/Users/James/Dropbox/Code/git/wildseal-dev/style.css",
+		"/Users/James/Dropbox/Code/Boston restaurant site/index.html",
+		"/Users/James/Dropbox/Code/Boston restaurant site/data.json",
+		"/Users/James/Dropbox/Code/git/wildseal-dev/README.md",
+		"/Users/James/Dropbox/Code/Angular tutorial (Code School)/js/app.js",
+		"/Users/James/Dropbox/Harvard Summer School - 2015/Fundamentals of Website Development/CUSTOM/custom.css",
+		"/Users/James/Dropbox/Code/angular-phonecat/app/index.html",
+		"/Users/James/Dropbox/Code/angular-phonecat/app/bower_components/angular/angular.js",
+		"/Users/James/Dropbox/Code/angular-phonecat/app/js/controllers.js",
+		"/Users/James/Dropbox/Code/angular-phonecat/app/js/app.js",
+		"/Users/James/Dropbox/Code/mks-admissions-challenge-1.js",
+		"/Users/James/Dropbox/harvard summer school - 2015/Fundamentals of Website Development/xformdeprecated/deprecated.html",
+		"/Users/James/Dropbox/Code/Website deployment/First website/css/grayscale.css",
+		"/Users/James/Dropbox/Code/Wedding website/css/bootstrap.css",
+		"/Users/James/Dropbox/Harvard Summer School - 2015/Fundamentals of Website Development/books/books.html",
+		"/Users/James/Dropbox/harvard summer school - 2015/Fundamentals of Website Development/books/books.css",
+		"/Users/James/Dropbox/Code/Wedding website/index.html",
+		"/Users/James/Desktop/harvard_dce.html",
+		"/Users/James/Dropbox/Harvard Summer School - 2015/Fundamentals of Website Development/lunch_special/form.css",
+		"/Users/James/Dropbox/Code/Old coding templates/GA - MadLib game_files/css",
+		"/Users/James/Desktop/simple_page.html",
+		"/Users/James/Desktop/A simple file to be published on the course web server host.html",
+		"/Users/James/Desktop/725694.html",
+		"/Users/James/Desktop/Code/angular-tutorial/README.md",
+		"/Users/James/Desktop/Code/Angular tutorial (Code School)/js/app.js",
+		"/Users/James/Desktop/Code/Angular tutorial (Code School)/index.html",
+		"/Users/James/Desktop/Code/angular-phonecat/app/js/app.js",
+		"/Users/James/Desktop/Code/Angular tutorial/js/app.js",
+		"/Users/James/Desktop/Code/scratch-sheet.js",
+		"/Users/James/Library/Application Support/Sublime Text 3/Packages/User/AngularJS-sublime-package.sublime-settings",
+		"/Users/James/Library/Application Support/Sublime Text 3/Packages/AngularJS/AngularJS-sublime-package.sublime-settings",
+		"/Users/James/Desktop/Code/Angular tutorial/index.html",
+		"/Users/James/Desktop/Code/Wedding website (from scratch)/index.html",
+		"/Users/James/Desktop/Code/admissions-challenge-2-master/scratch-sheet.js",
+		"/Users/James/Desktop/Code/admissions-challenge-2-master/README.md",
+		"/Users/James/Library/Application Support/Sublime Text 3/Packages/User/node.sublime-build",
+		"/Users/James/Desktop/node.sublime-build",
+		"/Users/James/Library/Application Support/Sublime Text 3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/Users/James/Desktop/mks-admissions-challenge-1.js",
+		"/Users/James/Desktop/Wedding website (from scratch)/index.html",
+		"/Users/James/Library/Application Support/Sublime Text 3/Packages/SideBarEnhancements/Default (OSX).sublime-keymap"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"color",
+			"hex-1-click",
+			"hex-1",
+			"popSwatch",
+			"sm",
+			"0.5",
+			"l",
+			"hover",
+			"60px",
+			"150",
+			"concent",
+			"docHeight",
+			"offs",
+			"col-xs-3",
+			"swatches",
+			"asdf",
+			"	background-size: cover;\n	background-repeat: no-repeat;\n	background-position: center;\n	opacity: 1;\n	height: 100%; \n	z-index: -5;",
+			"-3",
+			"3",
+			"xs",
+			"sm",
+			"md",
+			"sm",
+			"count",
+			"linear",
+			"opactiy",
+			"-webkit-",
+			"150",
+			"120",
+			"1.2s",
+			"60",
+			"logo-1-an",
+			"flipOutX",
+			"120",
+			"100",
+			"65",
+			"0%",
+			"60",
+			"140",
+			"50%,50%",
+			"50%,0%",
+			"0",
+			"-50%, -50%",
+			"center",
+			"align",
+			"background-color",
+			"color",
+			"h1",
+			"navbar-togg",
+			"500ms",
+			"Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.",
+			"h2",
+			"h1",
+			"NOTES",
+			"CUISINE / MEAL",
+			"NEIGHBORHOOD",
+			"WEBSITE",
+			"swatchKids",
+			"$",
+			"animate-flag",
+			"'.animate-flag img'",
+			"1000ms",
+			"jumbohe",
+			"bs-ex",
+			"bs-exam",
+			"bg-par",
+			"-->\n",
+			".navbar-nav",
+			"content-con",
+			"#masthead-container img",
+			"changeMast",
+			"changeTop",
+			"navbar-to",
+			"navbar-togg",
+			"collapse",
+			"navbar",
+			"section",
+			"example",
+			"collapse",
+			"h4",
+			"xs",
+			"wrapper",
+			"par2",
+			"scrolled",
+			"currentTop",
+			"#bg-par2",
+			"scrolledPercent / 2",
+			"md",
+			"scrolledPercent",
+			"asd;lfjkasf",
+			"parallax",
+			"'#bg-title'",
+			"jumboHeight",
+			"jumboHei",
+			"ul",
+			"nav",
+			"newRest",
+			"id=\"add-site\"",
+			"defaultBounds",
+			"pac-input",
+			"MAP",
+			"map",
+			"Map",
+			"map",
+			"th",
+			"pac-input",
+			"elevator",
+			"rest-data",
+			"restData",
+			"img",
+			".navbar-nav > li",
+			".navba",
+			".nav",
+			"in",
+			";\n",
+			"00207A",
+			"alig",
+			";\n",
+			"posi",
+			"Pesto",
+			"Honey Mustard",
+			"checkbox",
+			"Mayonnaise",
+			"spread",
+			"Olive",
+			"Pesto",
+			"Honey Mustard",
+			"Mayonaisse"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\n"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.516825950647,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 164.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/Node.sublime-build",
+	"project": "",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 204.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

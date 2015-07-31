@@ -1,0 +1,360 @@
+p {
+	font-family: georgia;
+}
+
+.navbar-default {
+	border: none !important;
+}
+
+.navbar-fixed-top {
+	margin-bottom: 0px;
+	width: 100%;
+	background-color: rgba(101,101,90,0);
+}
+
+.navbar-brand {
+	font-weight: bolder;
+	color: black !important;
+	text-shadow: 1px 0 0 grey;
+	font-family: 'Special Elite';
+	font-size: 20px;
+	margin-left: 30px !important;
+}
+
+#brand-icon {
+	display: inline;
+	height: 40px;
+	top: 2px;
+	position: absolute;
+	margin-left: 6px;
+}
+
+#navbar-big a {
+	color: black;
+	font-weight: bold;
+}
+
+#navbar-big a:hover {
+    background-color: #A29B89;
+    -webkit-transition: background-color 200ms linear;
+    -moz-transition: background-color 200ms linear;
+    -o-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+
+#navbar-big a:active {
+	background-color: purple !important;
+	color: white;
+}
+
+#bg-container {
+	position: relative;
+	width: 100%;
+	height: 750px;
+}
+
+#bg-image {
+	background-image: url("../images/bgs/2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 1;
+	position: absolute;
+	width: 100%;
+	height: 100%; 
+	top: 0;
+	bottom: 0;
+	z-index: -5;
+}
+
+#title-head {
+	margin-top: 70px;
+}
+
+#picture-logo {
+	height: 155px;
+	width: 155px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#picture-logo img {
+	height: 150px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#picture-logo-1 {
+	z-index: -1;
+}
+
+#picture-logo-2 {
+	z-index: 0;
+}
+
+#title-head h1 {
+	font-size: 96px;
+	color: lightgrey;
+	text-shadow:   
+      -1px -1px 1px #111, 
+      2px 2px 1px #363636;
+}
+
+#title-head h2 {
+	color: lightgrey;
+	text-shadow:   
+      -1px -1px 1px #111, 
+      2px 2px 1px #363636;
+}
+
+.buttons a {
+	width: 220px;
+	border: 2px solid black;
+	font-size: 1em;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: rgba(101,101,90,0.5);
+	margin-right: 10px;
+	margin-top: 10px;
+	padding: 10px;
+	display: inline-block;
+	color: lightgrey;
+}
+
+.buttons a:hover {
+	color: black;
+    background-color: #A29B89;
+    border: 1px solid black;
+    -webkit-transition: background-color 200ms linear;
+    -moz-transition: background-color 200ms linear;
+    -o-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+
+
+#history-container {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+/*TO ALIGN THE IMAGE VERTICALLY IN MIDDLE OF DIV*/
+.helper {
+	vertical-align: middle;
+	display: inline-block;
+	height: 100%;
+}
+
+.history-pic-container {
+	height: 100%;
+	white-space: nowrap;
+	text-align: center;
+}
+
+.history-pic {
+	height: 275px;
+	border: 1px solid black;
+	border-radius: 4px;
+}
+
+#history-text h1 {
+	text-align: center;
+}
+
+#nature-container {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#nature-title {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#animals {
+	height: 200px;
+	background-color: transparent;
+	background-image: url(../images/animals.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 1;
+}
+
+#patterns-container {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: lightgrey;
+	margin: 0;
+	width: 100%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+#patterns-title {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.country {
+	padding-left: 10px;
+	padding-right: 10px;
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.patterns-animate {
+	height: 200px;
+	display: block;
+	position: relative;
+	width: 100%;
+}
+
+.camo-type {
+	height: 200px;
+	width: 100%;
+	display: block;
+	position: absolute;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: 0;
+	position: absolute;
+	border-top: 1px solid gray;
+	border-left: 1px solid gray;
+	border-right: 1px solid gray;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+	border-bottom: 1px solid gray;
+}
+
+.flag-container {
+	height: 200px;
+	width: 100%;
+	display: none;
+	z-index: 5;
+	position: relative;
+	vertical-align: middle;
+}
+
+.flag-container img {
+	position: absolute;
+	width: 50%;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transofrm: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+} 
+
+.country-text {
+	padding: 10px;
+	line-height: 1.4;
+	background-color: white;
+	height: auto;
+	width: 270px;
+	display: none;
+	position: absolute;
+	height: 435px;
+	border-left: 1px solid gray;
+	border-right: 1px solid gray;
+	border-bottom: 1px solid gray;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	z-index: 5;
+
+/*	added width, changed position from relative to absolute, changed z-index to 5, changed display to none from block
+*/}
+
+.pat-name {
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.country-name {
+	text-align: center;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.pat-info {
+	height: 210px;
+	margin-top: 10px;
+}
+
+.fancy-hr {
+	border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.pat-hex-container {
+	top: 315px;
+	width: 252px;
+	padding-left: 10px;
+	padding-right: 10px;
+	position: absolute;
+	margin: 0 auto;
+}
+
+.pat-hex-color {
+	position: relative;
+	height: 50px;
+	width: 50px;
+	margin: 4px;
+	border: 1px solid gray;
+	border-radius: 3px;
+	padding: 0;
+	background-size: 100% 100%;
+	display: inline-block;
+}
+
+.pat-hex-color-hover {
+	width: 0px;
+	height: 0px;
+	border: 0;
+	border-radius: 3px;
+	text-align: center;
+	background-color: white;
+	float: left;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transofrm: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	z-index: 5;
+	text-transform: uppercase;
+}
+
+.pat-hex-color-hover p {
+	opacity: 0;
+	font-weight: bold;
+}
+
+.country-exp {
+	width: 23%;
+	margin: 1%;
+	border: 2px solid red;
+	height: 300px;
+}
+
+.pat-hex-color-container-exp {
+	margin-top: 95%;
+	text-align: center;
+}
+
+.pat-hex-color-exp {
+	width: 23%;
+	margin: 1%;
+	border: 1px solid blue;
+	height: 30px;
+}

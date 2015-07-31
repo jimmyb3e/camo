@@ -1,0 +1,76 @@
+{
+	"camoData": [
+	    {
+	      "NAME": "United States",
+	      "PATNAME": "Universal Camouflage Pattern (UCP)",
+	      "INFO": "Commonly referred to as ACU (Army Combat Uniform), this is the pattern employed by the U.S. Army.  Introduced after a controversial testing phase in 2004, the UCP is almost universally derided among service members due to its inability to blend into natural environments. The Army recently announced that it will cancel the production of UCP in favor of a MultiCam pattern variant.",
+	      "FLAGLOC": "images/flags/usflag.jpg",
+	      "CAMOLOC": "images/patterns/acu.jpg",
+	      "CAMOLOCTHUMB": "images/patterns/thumbs/acu.jpg",
+	      "HEXCOLORS": ["#696F65","#A29B89","#838378"]
+	    },
+	    {
+	      "NAME": "United Kingdom",
+	      "PATNAME": "Multi-Terrain Pattern",
+	      "INFO": "Closely resembling the venerable MultiCam pattern, the Multi-Terrain Pattern is the British Ministry of Defence's replacement for its long-used Disruptive Pattern Material. Initially fielded to units deployed or deploying to Afghanistan, the pattern fully replaced DPM in 2013. The pattern works well in a variety of envrionments, from arid drylands to tropical rainforests.",
+	      "FLAGLOC": "images/flags/ukflag.jpg",
+	      "CAMOLOC": "images/patterns/multicam.jpg",
+	      "CAMOLOCTHUMB": "images/patterns/thumbs/multicam.jpg",
+	      "HEXCOLORS": ["#3b3731", "#979386", "#5b6340", "#7a7854" ]
+	    },
+	    {
+	      "NAME": "Various",
+	      "PATNAME": "M81 Woodland",
+	      "INFO": "Also commonly referred to as BDU (Battle Dress Uniform) due to its long-time use by the U.S. Army, this pattern is one of the most widely recognizable. It was originally issued to all branches of the U.S. military in 1981 and was in use until 2006. The pattern was exported to or emulated by dozens of militaries globally and continues to see use in numerous countries, including many in Africa.",
+	      "FLAGLOC": "images/flags/afghanflag.jpg",
+	      "CAMOLOC": "images/patterns/woodland.jpg",
+	      "CAMOLOCTHUMB": "images/patterns/thumbs/woodland.jpg",
+	      "HEXCOLORS": ["#A1986B", "#000000", "#5f7753", "#60553e" ]
+	    },
+	    {
+	      "NAME": "United States",
+	      "PATNAME": "Woodland Marine Pattern (MARPAT)",
+	      "INFO": "This pattern, typically referred to as woodland MARPAT or MARPAT, was introduced in the U.S. Marine Corps in 2002. Based in part on the Canadian CADPAT, this pattern along with its desert-variety sister, is extremely effective in its target environment. Since its introduction and to the disapproval of many a Marine, it has been widely emulated, both by countries outside of the U.S. and by the U.S.M.C.'s sister services.",
+	      "FLAGLOC": "images/flags/usflag.jpg",
+	      "CAMOLOC": "images/patterns/marpat.jpg",
+	      "CAMOLOCTHUMB": "images/patterns/thumbs/marpat.jpg",
+	      "HEXCOLORS": [ "#85765e", "#000000", "#53614f", "#989788" ]
+	    },
+	    {
+	      "NAME": "United States",
+	      "PATNAME": "Desert Marine Pattern (MARPAT)",
+	      "INFO": "Introduced alongside woodland MARPAT, desert MARPAT is similarly effective in its target environments - arid drylands and deserts. Marines employed this pattern during Operation Enduring Freedom in Afghanistan, and its operational history has been marked predominately with success.",
+	      "FLAGLOC": "images/flags/usflag.jpg",
+	      "CAMOLOC": "images/patterns/marpatdesert.jpg",
+	      "CAMOLOCTHUMB": "images/patterns/thumbs/marpatdesert.jpg",
+	      "HEXCOLORS": [ "#614a33", "#a49b8d", "#8f7b66", "#9f9487" ]
+	    },
+	    {
+	      "NAME": "United Kingdom",
+	      "PATNAME": "Disruptive Pattern Material (DPM)",
+	      "INFO": "Among the oldest patterns still in use, a form of DPM was initially fielded to British special operations units in the 1940s, and the pattern had gained widespread use among British services by the late 1960s. It was later adapted for desert and jungle environments and has seen significant operational service in its nearly fifty years of service.",
+	      "FLAGLOC": "images/flags/ukflag.jpg",
+	      "CAMOLOC": "images/patterns/disruptive.jpg",
+	      "CAMOLOCTHUMB": "images/patterns/thumbs/disruptive.jpg",
+	      "HEXCOLORS": ["#797140", "#33260c", "#475a25", "#000000"]
+	    },
+	    {
+	      "NAME": "United States",
+	      "PATNAME": "Tri-Color Desert (DCU)",
+	      "INFO": "asdlkfjla asdkjf asl dfjeka d af",
+	      "FLAGLOC": "images/flags/usflag.jpg",
+	      "CAMOLOC": "images/patterns/3colordesert.jpg",
+	      "CAMOLOCTHUMB": "images/patterns/thumbs/3colordesert.jpg",
+	      "HEXCOLORS": ["#bab38f", "#e0cfaf", "#805719"]
+	    },
+	    {
+	      "NAME": "Italy",
+	      "PATNAME": "Desert Vegetato",
+	      "INFO": "asdlkfjla asdkjf asl dfjeka d af",
+	      "FLAGLOC": "images/flags/italy.jpg",
+	      "CAMOLOC": "images/patterns/desertvegetato.jpg",
+	      "CAMOLOCTHUMB": "images/patterns/thumbs/desertvegetato.jpg",
+	      "HEXCOLORS": ["#89836f", "#9ca19e", "#60534c"]
+	    }
+	]
+}

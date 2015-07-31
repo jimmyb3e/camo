@@ -1,0 +1,65 @@
+h1 {
+	color: blue;
+}
+
+#canvas {
+	background-color: white;
+	border: 1px solid black;
+}
+
+#build {
+	width: 100px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#canvas-container {
+	margin-top: 70px;
+}
+
+.form-group {
+	margin-bottom: 5px;
+}
+
+.factor-des {
+	font-size: 12px;
+	line-height: 1.2;
+}
+
+.pre-defined-pat-box {
+}
+
+.color {
+	margin-bottom: 5px;
+}
+
+.swatches-animate {
+	border: 2px solid blue;
+}
+
+.country {
+	border: 2px solid red;
+	position: relative;
+}
+
+.country-text {
+	border: 2px solid green;
+	display: none;
+	position: absolute;
+	z-index: 10;
+}
+
+.pat-hex-color {
+	z-index: 15;
+}
+
+.pat-hex-color-hover {
+	z-index: 20;
+}
+
+.flag-container img {
+	border: 3px solid purple;
+	width: 50%;
+}
+
+

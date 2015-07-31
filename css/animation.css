@@ -1,0 +1,94 @@
+/*ANIMATION STYLES*/
+
+
+@-webkit-keyframes logo-bounce-out { 
+    0% { 
+        -webkit-transform: translate(75%,75%) rotateZ(90deg); 
+        -webkit-opacity: 0;
+    }
+} 
+
+@keyframes logo-bounce-out { 
+    0% { 
+		transform: translate(75%,75%) rotateZ(90deg); 
+        opacity: 0;
+    }
+}
+
+.animated { 
+    -webkit-animation-duration: 1s; 
+    animation-duration: 1s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+}
+
+.flipInX { 
+    -webkit-backface-visibility: visible !important; 
+    -webkit-animation-name: flipInX; 
+    backface-visibility: visible !important; 
+    animation-name: flipInX; 
+}
+
+@-webkit-keyframes flipInX { 
+    0% { 
+        -webkit-transform: perspective(400px) rotateX(90deg); 
+        opacity: 0; 
+    } 
+    40% { 
+        -webkit-transform: perspective(400px) rotateX(-10deg); 
+    } 
+    70% { 
+        -webkit-transform: perspective(400px) rotateX(10deg); 
+    } 
+    100% { 
+        -webkit-transform: perspective(400px) rotateX(0deg); 
+        opacity: 1; 
+    } 
+} 
+
+@keyframes flipInX { 
+    0% { 
+        transform: perspective(400px) rotateX(90deg); 
+        opacity: 0; 
+    } 
+    40% { 
+        transform: perspective(400px) rotateX(-10deg); 
+    } 
+    70% { 
+        transform: perspective(400px) rotateX(10deg); 
+    } 
+    100% { 
+        transform: perspective(400px) rotateX(0deg); 
+        opacity: 1; 
+    } 
+} 
+
+.flipOutX { 
+    -webkit-animation-name: flipOutX; 
+    -webkit-backface-visibility: visible !important; 
+    animation-name: flipOutX; 
+    backface-visibility: visible !important; 
+}
+
+@-webkit-keyframes flipOutX { 
+    0% { 
+        -webkit-transform: perspective(400px) rotateX(0deg); 
+        opacity: 1; 
+    } 
+    100% { 
+        -webkit-transform: perspective(400px) rotateX(90deg); 
+        opacity: 0; 
+    } 
+} 
+@keyframes flipOutX { 
+    0% { 
+        transform: perspective(400px) rotateX(0deg); 
+        opacity: 1; 
+    } 
+    100% { 
+        transform: perspective(400px) rotateX(90deg); 
+        opacity: 0; 
+    } 
+} 
+
+

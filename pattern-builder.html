@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Pattern builder</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/digital.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Brand</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right" id="navbar-big">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#swatches-container">Swatches</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="row" id="canvas-container">
+            <div class="col-sm-12 col-lg-6">
+                <canvas id="canvas" width="512" height="512">random canvas</canvas>
+            </div> 
+
+            <div class="col-sm-12 col-lg-6">
+                <button type="button" value="build" id="build">Build</button>
+                <form class="form-horizontal">
+                    <fieldset>
+                        <legend>Base Pattern Properties</legend>
+                        <div class="form-group">
+                            <div class="col-sm-8">
+                                Like the base pattern but want to adjust the colors? Select "save"; otherwise, select "new."
+                            </div>
+                            <div class="col-sm-4">
+                                <label class="radio-inline">
+                                    <input type="radio" name="base" id="new-base" checked="checked">New
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="base" id="save-base">Save
+                                </label>
+                            </div>
+                        </div>
+                        <hr/>
+                        <div class="form-group">
+                            <label for="canvas-size" class="col-sm-3 control-label">Canvas size</label>             
+                            <div class="col-sm-2">
+                                <input type="text" name="canvas-size" id="canvas-size" value="512" class="form-control">
+                            </div>
+                            <div class="col-sm-7 factor-des">
+                                must be power of 2, i.e., 128, 256, 512, etc.
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="pixel-size" class="col-sm-3 control-label">Pixellation</label>  
+                            <div class="col-sm-2">
+                                <input type="text" name="pixel-size" id="pixel-size" value="1" class="form-control">
+                            </div>
+                            <div class="col-sm-7 factor-des">
+                                should be power of 2, otherwise you'll get some interesting results
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="roughness" class="col-sm-3 control-label">Roughness</label>
+                            <div class="col-sm-2">
+                                <input type="text" name="roughness" id="roughness" value="8" class="form-control">
+                            </div>
+                            <div class="col-sm-7 factor-des">
+                                this will determine how busy the pattern is. a higher value will give a noisier pattern.
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Colors</legend>
+                        <p>Select a set of colors pulled from an already existing pattern or create your own</p>
+                        <div class="form-group">
+                            <label for="pre-defined-pat" class="col-sm-5 control-label">Pre-defined color sets</label>
+                            <div class="col-sm-7">
+                                <select class="form-control pre-defined-pat-box" id="pre-defined-pat">
+                                    <option value="-1">I'll make my own</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="custom-color-num" class="col-sm-5 control-label">Create your own color set</label>
+                            <div class="col-sm-7">
+                                <select class="form-control pre-defined-pat-box" id="custom-color-num">
+                                    <option value="1">One (1) color</option>
+                                    <option value="2">Two (2) colors</option>
+                                    <option value="3">Three (3) colors</option>
+                                    <option value="4">Four (4) colors</option>
+                                    <option value="5">Greyscale</option>
+                                </select>
+                            </div>
+                        </div>
+                        <p>Format for input: hex value (#fff, #ffffff, fff, or ffffff)</p>
+                        <div class="form-group">
+                            <div class="col-xs-6">
+                                <input type="text" name="color-1" id="color-1" class="form-control color">
+                                <input type="text" name="color-2" id="color-2" class="form-control color">
+                            </div>
+                            <div class="col-xs-6">
+                                <input type="text" name="color-3" id="color-3" class="form-control color">
+                                <input type="text" name="color-4" id="color-4" class="form-control color">
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div> 
+        </div>
+    </div>
+
+    <hr/>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3 country">
+                <div class="swatches-animate">
+                    <div class="camo-type"></div>
+                    <div class="flag-container animated"></div>
+                </div>
+                <section class="country-text">
+                    <h3 class="country-name"></h3>
+                    <h4 class="pat-name"></h4>
+                    <p class="pat-info"></p>
+                    <div class="row pat-hex-container">
+                        <div class="col-xs-3 pat-hex-color">
+                            <div class="pat-hex-color-hover"></div>
+                        </div>
+                        <div class="col-xs-3 pat-hex-color">
+                            <div class="pat-hex-color-hover"></div>
+                        </div>
+                        <div class="col-xs-3 pat-hex-color">
+                            <div class="pat-hex-color-hover"></div>
+                        </div>
+                        <div class="col-xs-3 pat-hex-color">
+                            <div class="pat-hex-color-hover"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-xs-3 country">
+                <div class="swatches-animate">
+                    <div class="camo-type"></div>
+                    <div class="flag-container animated"></div>
+                </div>
+                <section class="country-text">
+                    <h3 class="country-name"></h3>
+                    <h4 class="pat-name"></h4>
+                    <p class="pat-info"></p>
+                    <div class="row pat-hex-container">
+                        <div class="col-xs-3 pat-hex-color">
+                            <div class="pat-hex-color-hover"></div>
+                        </div>
+                        <div class="col-xs-3 pat-hex-color">
+                            <div class="pat-hex-color-hover"></div>
+                        </div>
+                        <div class="col-xs-3 pat-hex-color">
+                            <div class="pat-hex-color-hover"></div>
+                        </div>
+                        <div class="col-xs-3 pat-hex-color">
+                            <div class="pat-hex-color-hover"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-xs-3 country">
+                <div class="swatches-animate">
+                    <div class="camo-type"></div>
+                    <div class="flag-container animated"></div>
+                </div>
+                <section class="country-text">
+                    <h3 class="country-name"></h3>
+                    <h4 class="pat-name"></h4>
+                    <p class="pat-info"></p>
+                    <div class="row pat-hex-container">
+                        <div class="col-xs-3 pat-hex-color">
+                            <div class="pat-hex-color-hover"></div>
+                        </div>
+                        <div class="col-xs-3 pat-hex-color">
+                            <div class="pat-hex-color-hover"></div>
+                        </div>
+                        <div class="col-xs-3 pat-hex-color">
+                            <div class="pat-hex-color-hover"></div>
+                        </div>
+                        <div class="col-xs-3 pat-hex-color">
+                            <div class="pat-hex-color-hover"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-xs-3 country">
+                <div class="swatches-animate">
+                    <div class="camo-type"></div>
+                    <div class="flag-container animated"></div>
+                </div>
+                <section class="country-text">
+                    <h3 class="country-name"></h3>
+                    <h4 class="pat-name"></h4>
+                    <p class="pat-info"></p>
+                    <div class="row pat-hex-container">
+                        <div class="col-xs-3 pat-hex-color">
+                            <div class="pat-hex-color-hover"></div>
+                        </div>
+                        <div class="col-xs-3 pat-hex-color">
+                            <div class="pat-hex-color-hover"></div>
+                        </div>
+                        <div class="col-xs-3 pat-hex-color">
+                            <div class="pat-hex-color-hover"></div>
+                        </div>
+                        <div class="col-xs-3 pat-hex-color">
+                            <div class="pat-hex-color-hover"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <hr/>
+
+        <div class="row">
+            <div class="col-xs-3 country">
+                <div class="swatches-animate">
+                    <div class="camo-type"></div>
+                    <div class="flag-container animated"></div>
+                </div>
+                <section class="country-text">
+                    <h3 class="country-name"></h3>
+                    <h4 class="pat-name"></h4>
+                    <p class="pat-info"></p>
+                    <div class="row pat-hex-container">
+                        <div class="col-xs-3 pat-hex-color">
+                            <div class="pat-hex-color-hover"></div>
+                        </div>
+                        <div class="col-xs-3 pat-hex-color">
+                            <div class="pat-hex-color-hover"></div>
+                        </div>
+                        <div class="col-xs-3 pat-hex-color">
+                            <div class="pat-hex-color-hover"></div>
+                        </div>
+                        <div class="col-xs-3 pat-hex-color">
+                            <div class="pat-hex-color-hover"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-xs-3 country">
+                <div class="swatches-animate">
+                    <div class="camo-type"></div>
+                    <div class="flag-container animated"></div>
+                </div>
+                <section class="country-text">
+                    <h3 class="country-name"></h3>
+                    <h4 class="pat-name"></h4>
+                    <p class="pat-info"></p>
+                    <div class="row pat-hex-container">
+                        <div class="col-xs-3 pat-hex-color">
+                            <div class="pat-hex-color-hover"></div>
+                        </div>
+                        <div class="col-xs-3 pat-hex-color">
+                            <div class="pat-hex-color-hover"></div>
+                        </div>
+                        <div class="col-xs-3 pat-hex-color">
+                            <div class="pat-hex-color-hover"></div>
+                        </div>
+                        <div class="col-xs-3 pat-hex-color">
+                            <div class="pat-hex-color-hover"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-xs-3 country">
+                <div class="swatches-animate">
+                    <div class="camo-type"></div>
+                    <div class="flag-container animated"></div>
+                </div>
+                <section class="country-text">
+                    <h3 class="country-name"></h3>
+                    <h4 class="pat-name"></h4>
+                    <p class="pat-info"></p>
+                    <div class="row pat-hex-container">
+                        <div class="col-xs-3 pat-hex-color">
+                            <div class="pat-hex-color-hover"></div>
+                        </div>
+                        <div class="col-xs-3 pat-hex-color">
+                            <div class="pat-hex-color-hover"></div>
+                        </div>
+                        <div class="col-xs-3 pat-hex-color">
+                            <div class="pat-hex-color-hover"></div>
+                        </div>
+                        <div class="col-xs-3 pat-hex-color">
+                            <div class="pat-hex-color-hover"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-xs-3 country">
+                <div class="swatches-animate">
+                    <div class="camo-type"></div>
+                    <div class="flag-container animated"></div>
+                </div>
+                <section class="country-text">
+                    <h3 class="country-name"></h3>
+                    <h4 class="pat-name"></h4>
+                    <p class="pat-info"></p>
+                    <div class="row pat-hex-container">
+                        <div class="col-xs-3 pat-hex-color">
+                            <div class="pat-hex-color-hover"></div>
+                        </div>
+                        <div class="col-xs-3 pat-hex-color">
+                            <div class="pat-hex-color-hover"></div>
+                        </div>
+                        <div class="col-xs-3 pat-hex-color">
+                            <div class="pat-hex-color-hover"></div>
+                        </div>
+                        <div class="col-xs-3 pat-hex-color">
+                            <div class="pat-hex-color-hover"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <hr/>
+
+
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="jscolor/jscolor.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/digital.js"></script>
+
+
+</body>
+</html>
